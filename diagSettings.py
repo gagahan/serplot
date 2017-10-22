@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'settings.ui'
+#
+# Created by: PyQt5 UI code generator 5.8
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_dialogSettings(object):
+    def setupUi(self, dialogSettings):
+        dialogSettings.setObjectName("dialogSettings")
+        dialogSettings.resize(202, 160)
+        self.verticalLayout = QtWidgets.QVBoxLayout(dialogSettings)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.frame = QtWidgets.QFrame(dialogSettings)
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.formLayout = QtWidgets.QFormLayout(self.frame)
+        self.formLayout.setObjectName("formLayout")
+        self.labelChooseSerial = QtWidgets.QLabel(self.frame)
+        self.labelChooseSerial.setObjectName("labelChooseSerial")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.labelChooseSerial)
+        self.comboBoxChooseSerial = QtWidgets.QComboBox(self.frame)
+        self.comboBoxChooseSerial.setObjectName("comboBoxChooseSerial")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.comboBoxChooseSerial)
+        self.comboBoxBaudrate = QtWidgets.QComboBox(self.frame)
+        self.comboBoxBaudrate.setObjectName("comboBoxBaudrate")
+        self.comboBoxBaudrate.addItem("")
+        self.comboBoxBaudrate.addItem("")
+        self.comboBoxBaudrate.addItem("")
+        self.comboBoxBaudrate.addItem("")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.comboBoxBaudrate)
+        self.labelBaudrate = QtWidgets.QLabel(self.frame)
+        self.labelBaudrate.setObjectName("labelBaudrate")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.labelBaudrate)
+        self.comboBoxNPlots = QtWidgets.QComboBox(self.frame)
+        self.comboBoxNPlots.setObjectName("comboBoxNPlots")
+        self.comboBoxNPlots.addItem("")
+        self.comboBoxNPlots.addItem("")
+        self.comboBoxNPlots.addItem("")
+        self.comboBoxNPlots.addItem("")
+        self.comboBoxNPlots.addItem("")
+        self.comboBoxNPlots.addItem("")
+        self.comboBoxNPlots.addItem("")
+        self.comboBoxNPlots.addItem("")
+        self.comboBoxNPlots.addItem("")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.comboBoxNPlots)
+        self.labelNPlots = QtWidgets.QLabel(self.frame)
+        self.labelNPlots.setObjectName("labelNPlots")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.labelNPlots)
+        self.verticalLayout.addWidget(self.frame)
+        self.frame_2 = QtWidgets.QFrame(dialogSettings)
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.frame_2)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.btnApply = QtWidgets.QPushButton(self.frame_2)
+        self.btnApply.setEnabled(False)
+        self.btnApply.setObjectName("btnApply")
+        self.horizontalLayout.addWidget(self.btnApply)
+        self.verticalLayout.addWidget(self.frame_2)
+
+        self.retranslateUi(dialogSettings)
+        QtCore.QMetaObject.connectSlotsByName(dialogSettings)
+
+    def retranslateUi(self, dialogSettings):
+        _translate = QtCore.QCoreApplication.translate
+        dialogSettings.setWindowTitle(_translate("dialogSettings", "Dialog"))
+        self.labelChooseSerial.setText(_translate("dialogSettings", "Serial Port"))
+        self.comboBoxBaudrate.setItemText(0, _translate("dialogSettings", "9600"))
+        self.comboBoxBaudrate.setItemText(1, _translate("dialogSettings", "19200"))
+        self.comboBoxBaudrate.setItemText(2, _translate("dialogSettings", "38400"))
+        self.comboBoxBaudrate.setItemText(3, _translate("dialogSettings", "115200"))
+        self.labelBaudrate.setText(_translate("dialogSettings", "Baudrate"))
+        self.comboBoxNPlots.setItemText(0, _translate("dialogSettings", "1"))
+        self.comboBoxNPlots.setItemText(1, _translate("dialogSettings", "2"))
+        self.comboBoxNPlots.setItemText(2, _translate("dialogSettings", "3"))
+        self.comboBoxNPlots.setItemText(3, _translate("dialogSettings", "4"))
+        self.comboBoxNPlots.setItemText(4, _translate("dialogSettings", "5"))
+        self.comboBoxNPlots.setItemText(5, _translate("dialogSettings", "6"))
+        self.comboBoxNPlots.setItemText(6, _translate("dialogSettings", "7"))
+        self.comboBoxNPlots.setItemText(7, _translate("dialogSettings", "8"))
+        self.comboBoxNPlots.setItemText(8, _translate("dialogSettings", "9"))
+        self.labelNPlots.setText(_translate("dialogSettings", "Number of Plots"))
+        self.btnApply.setText(_translate("dialogSettings", "Apply"))
+
