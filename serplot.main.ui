@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>670</width>
     <height>600</height>
    </rect>
   </property>
@@ -15,24 +15,32 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0" alignment="Qt::AlignRight">
-     <widget class="QPushButton" name="btnPlay">
+    <item row="1" column="2">
+     <widget class="QPushButton" name="btn_run">
       <property name="enabled">
        <bool>false</bool>
       </property>
-      <property name="minimumSize">
-       <size>
-        <width>782</width>
-        <height>0</height>
-       </size>
-      </property>
       <property name="text">
-       <string>Play</string>
+       <string>Run</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="0">
-     <widget class="GraphicsLayoutWidget" name="pltLayout"/>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="btn_clearBuffer">
+      <property name="text">
+       <string>Clear Buffer</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="labelBufferSize">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="3">
+     <widget class="QWidget" name="placeholder" native="true"/>
     </item>
    </layout>
   </widget>
@@ -41,8 +49,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>21</height>
+     <width>670</width>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMenu">
@@ -63,13 +71,6 @@
    </property>
   </action>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>GraphicsLayoutWidget</class>
-   <extends>QGraphicsView</extends>
-   <header>pyqtgraph</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
